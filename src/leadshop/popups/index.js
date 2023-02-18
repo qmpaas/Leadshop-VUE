@@ -1,0 +1,130 @@
+import Vue from 'vue';
+import utils from '../utils';
+import Modal from './Modal.vue';
+import heshop from '../index.js';
+
+/**
+ * <p  v-popup.role="description" data-value="description" action="">新建</p>
+ *
+ * v-popup.<绑定的模态框>="<需要传入的值>"
+ * data-value="<回调改变的值>"
+ * data-title="设置标题"
+ *
+ * 添加 affirm 方法
+ * @param  {[type]} option [description]
+ * @return {[type]}        [description]
+ */
+let directives = {
+  /**
+   * 数据池
+   * @type {Array}
+   */
+  store: {},
+  /**
+   * 弹出层
+   * @type {Object}
+   */
+  popup: {
+    bind: function (el, binding, vnode) {},
+    inserted: function (el, binding, vnode) {
+      let keys = vnode.elm.id || el.dataset.id || binding.expression || '_';
+      directives.store[keys] = binding.value ? binding.value : [];
+      utils.addEvent(el, 'click', () => {
+        // 获取双向绑定数据
+        let value = directives.store[keys];
+        // 获取对应模型
+        let popup = utils.getShift(binding.modifiers);
+        // 获取回调事件名称
+        let action = el.getAttribute('action') || '';
+        // 获取窗口标题
+        let title = el.getAttribute('title') || '操作窗口';
+        // 获取前置事件名称
+        let before = el.getAttribute('before') || '';
+        // 获取窗口标题
+        let modules = el.getAttribute('module') || '';
+        // 是否开启底部
+        let hide_footer = el.getAttribute('hide_footer') || false;
+        // 是否开启底部取消按钮
+        let hide_cancel = el.getAttribute('hide_cancel') || false;
+        // 确认按钮文案
+        let sure_btn = el.getAttribute('sure_btn') || '确定';
+        // 绑定数据
+        let vmodel = binding.expression || el.getAttribute('value') || '';
+        // 设置宽度
+        let width = el.getAttribute('width') || 730;
+        // 设置宽度
+        let top = el.getAttribute('top') || '15vh';
+        // VM实例
+        let vm = vnode.context;
+        //判断是否存在
+        if (modules && popup) {
+          let content = heshop.component('popups', popup);
+          if (modules) {
+            content = heshop.component(modules, popup);
+          }
+          if (vm[before]) {
+            let _before = vm[before].apply(vm);
+            if (_before === false) {
+              return true;
+            }
+          }
+          //判断组件是否存在
+          if (content) {
+            let visible = true;
+            content = Vue.extend(content);
+            let instance = utils.getInstance(
+              Vue.extend(Modal),
+              {
+                visible: visible,
+                value: value,
+                title: title,
+                width: width,
+                hide_footer: hide_footer,
+                hide_cancel: hide_cancel,
+                sure_btn: sure_btn,
+                top: top,
+                content: content,
+                vm: vm
+              },
+              {
+                route: vm.$route
+              }
+            );
+            let model = document.body.appendChild(instance.$el);
+            // 监听并移除节点
+            instance.$watch('visible', res => {
+              if (vmodel) {
+                vm[vmodel] = instance.value;
+              }
+              instance.visible = false;
+              document.body.removeChild(model);
+              // 如果回调事件存在责执行
+              if (vm[action]) {
+                if (instance.affirm) {
+                  vm[action].apply(vm, [instance.value, keys]);
+                }
+              }
+              //判断是否需要重载
+              if (vm.reload) {
+                vm.reload();
+              }
+            });
+          } else {
+            console.error('component组件不存');
+          }
+        } else {
+          console.error('modules或popup值不能为空');
+        }
+      });
+    },
+    update: function (el, binding, vnode) {
+      let keys = binding.expression ? binding.expression : '_';
+      if (!utils.Empty(binding.value)) {
+        directives.store[keys] = '';
+        directives.store[keys] = binding.value;
+      }
+    }
+  }
+};
+
+export default directives;

@@ -1,0 +1,85 @@
+.le-card {
+  background: #ffffff;
+  border-radius: 16px;
+}
+
+.le-status-information {
+  padding: 32px 40px;
+  width: 33%;
+
+  .le-status-text {
+    font-size: 20px;
+    font-family: PingFang SC;
+    font-weight: bold;
+    color: #623ceb;
+    opacity: 0.85;
+  }
+}
+
+.le-description {
+  padding: 32px 57px 32px 15px;
+  margin-left: 24px;
+
+  .le-menu {
+    min-width: 104px;
+    border-right: 1px solid #dcdfe6;
+    height: 120px;
+    padding: 0 24px;
+  }
+
+  .le-menu__item {
+    height: 26px;
+    line-height: 26px;
+    text-align: center;
+    cursor: pointer;
+  }
+
+  .le-item__active {
+    color: #623ceb;
+  }
+
+  .le-content {
+    width: 600px;
+    margin-left: 25px;
+  }
+
+  .le-content__note {
+    font-size: 14px;
+    font-family: PingFang SC;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.85);
+    line-height: 18px;
+    margin-bottom: 15px;
+  }
+}
+
+// 买家退货物流
+.le-buyer-return-flow {
+  margin-top: 20px;
+  padding: 24px;
+
+  .le-logistics__img {
+    width: 80px;
+    height: 80px;
+    border-radius: 8px;
+    margin-right: 8px;
+    object-fit: cover;
+  }
+}
+.he-user-freight.le-buyer-return-flow {
+  .he-info__content {
+    height: 200px;
+  }
+}
+.le-logistics-details {
+  padding: 0 24px;
+
+  .he-info__content {
+    width: 100%;
+    height: 190px;
+  }
+}
+
+.le-matter /deep/ .el-table--enable-row-hover .el-table__body tr:hover > td {
+  background: #fff !important;
+}

@@ -1,0 +1,217 @@
+.coupon {
+  overflow: hidden;
+}
+
+.le-coupon-box {
+  width: 375px;
+  padding: 10px 10px 5px 10px;
+  background: #ffffff;
+  .le-coupon-item {
+    height: 80px;
+    border-radius: 8px;
+    position: relative;
+
+    .le-coupon-item-content {
+      height: 100%;
+
+      .le-coupon-item-left {
+        border-top-left-radius: 8px;
+        border-bottom-left-radius: 8px;
+        margin: 5px 0 5px 5px;
+        position: relative;
+      }
+
+      .le-coupon-item-center {
+        width: 14px;
+        position: relative;
+        overflow: hidden;
+        height: 100%;
+
+        .le-item-doc {
+          position: absolute;
+          border-radius: 50%;
+          left: 50%;
+          width: 8px;
+          height: 8px;
+          background: #fff;
+        }
+        .le-item-doc-a {
+          transform: translate(-50%, -50%);
+        }
+        .le-item-doc-b {
+          bottom: 0;
+          transform: translate(-50%, 50%);
+        }
+        .le-item-center {
+          width: 14px;
+          height: calc(100% - 10px);
+          margin: 5px 0;
+          position: relative;
+          overflow: hidden;
+          .sawtooth {
+            display: block;
+            width: 8px;
+            height: 55px;
+            background-image: radial-gradient(circle, #ffffff 30%, transparent 35%);
+            background-size: 8px 11px;
+            background-repeat: repeat-y;
+            position: relative;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+          }
+          .le-item-center-doc {
+            width: 16px;
+            height: 16px;
+            border: 1px solid transparent;
+            border-radius: 50%;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+          }
+
+          .le-item-center-doc-a {
+            top: -11px;
+          }
+
+          .le-item-center-doc-b {
+            bottom: -11px;
+          }
+        }
+
+        .le-coupon-item-center-line {
+          position: absolute;
+          width: 1px;
+          height: 50px;
+          top: 50%;
+          left: 50%;
+          background-size: 1px 10px;
+          background-repeat: repeat-y;
+          background-position: center;
+          transform: translate(-50%, -50%);
+        }
+      }
+      .le-coupon-item-right {
+        margin: 5px 5px 5px 0;
+        border-top-right-radius: 8px;
+        border-bottom-right-radius: 8px;
+        padding: 3.5px 0;
+        position: relative;
+      }
+      .le-coupon-item-price {
+        font-family: DIN;
+        font-weight: bold;
+        text-align: center;
+      }
+      .le-coupon-item-price:before {
+        content: '￥';
+        font-size: 12px;
+        font-family: PingFang SC;
+        font-weight: 500;
+      }
+
+      .le-coupon-item-min {
+        font-family: PingFang SC;
+        font-weight: 500;
+        text-align: center;
+      }
+
+      .le-coupon-iem-appoint {
+        font-size: 11px;
+        font-family: PingFang SC;
+        font-weight: 500;
+        line-height: 14px;
+      }
+
+      .le-coupon-btn {
+        text-align: center;
+      }
+
+      .le-coupon-item-text {
+        padding: 11px 0 11px 13px;
+      }
+
+      .le-coupon-item-name {
+        font-size: 15px;
+        font-family: PingFang SC;
+        font-weight: 500;
+        line-height: 20px;
+      }
+    }
+  }
+
+  .le-item-marginRight-odd:nth-child(odd),
+  .le-item-marginRight {
+    margin-right: 6px;
+  }
+
+  .le-item-Jagged {
+    position: absolute;
+    width: 8px;
+    height: 70px;
+    background-image: radial-gradient(circle, #ffffff 40%, transparent 45%);
+    background-size: 8px 18px;
+    background-repeat: repeat-y;
+    top: 50%;
+  }
+
+  .le-item-Jagged:first-child {
+    left: 0;
+    transform: translate(-50%, -50%);
+  }
+
+  .le-item-Jagged:last-child {
+    right: 0;
+    transform: translate(50%, -50%);
+  }
+
+  .le-coupon-item.fillet {
+    .le-coupon-item-left:before,
+    .le-coupon-item-left:after {
+      content: '';
+      display: block;
+      position: absolute;
+      width: 15px;
+      height: 15px;
+      background-image: radial-gradient(circle, #ffffff 70%, transparent 71%);
+      background-size: 15px 15px;
+      background-repeat: no-repeat;
+    }
+
+    .le-coupon-item-left:before {
+      left: 0;
+      top: 0;
+      transform: translate(-80%, -80%);
+    }
+
+    .le-coupon-item-left:after {
+      left: 0;
+      bottom: 0;
+      transform: translate(-80%, 80%);
+    }
+
+    .le-coupon-item-right:before,
+    .le-coupon-item-right:after {
+      content: '';
+      display: block;
+      position: absolute;
+      width: 15px;
+      height: 15px;
+      background-image: radial-gradient(circle, #ffffff 70%, transparent 71%);
+      background-size: 15px 15px;
+      background-repeat: no-repeat;
+    }
+
+    .le-coupon-item-right:before {
+      right: 0;
+      top: 0;
+      transform: translate(80%, -80%);
+    }
+
+    .le-coupon-item-right:after {
+      right: 0;
+      bottom: 0;
+      transform: translate(80%, 80%);
+    }
+  }
+}

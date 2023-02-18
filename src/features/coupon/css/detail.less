@@ -1,0 +1,390 @@
+.le-card {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 24px;
+  margin-bottom: 24px;
+
+  .le-form-item__label {
+    font-size: 14px;
+    font-family: Microsoft YaHei;
+    font-weight: 400;
+    color: #262626;
+  }
+
+  .le-card-header {
+    margin-bottom: 35px;
+
+    span:first-child {
+      width: 4px;
+      height: 16px;
+      background: #623ceb;
+      margin-right: 12px;
+    }
+
+    span:last-child {
+      font-size: 16px;
+      font-family: Microsoft YaHei;
+      font-weight: 400;
+      color: #262626;
+    }
+  }
+
+  .le-card-body {
+    .le-item-form-prompt {
+      font-size: 12px;
+      font-family: Microsoft YaHei;
+      font-weight: 400;
+      color: #bfbfbf;
+    }
+
+    .le-item-form-text {
+      font-size: 14px;
+      font-family: Microsoft YaHei;
+      font-weight: 400;
+      color: #262626;
+    }
+
+    .le-form-item-time {
+      .le-go {
+        display: inline-block;
+        margin: 0 16px 0 16px;
+      }
+
+      /deep/ .el-date-editor {
+        width: 200px;
+
+        .el-input__inner {
+          padding-left: 41px;
+        }
+      }
+    }
+
+    .le-form-item-small-input {
+      width: 150px;
+      margin: 0 8px;
+
+      /deep/ .el-input__inner {
+        padding: 0 0 0 12px;
+        // width: 80px;
+        display: inline-block;
+      }
+
+      /deep/ .el-input-group__append {
+        // padding: 0 16px;
+      }
+    }
+
+    .le-select-btn {
+      border: 1px solid #623ceb;
+      color: #623ceb;
+      margin-right: 8px;
+    }
+
+    .le-select-btn:hover {
+      background: #ffffff;
+    }
+
+    .le-select-btn:focus {
+      background: #ffffff;
+    }
+
+    .le-des-goods {
+      padding-left: 20px;
+
+      .le-goods-table {
+        width: 600px;
+        margin-top: 16px;
+        border: 1px solid #dcdfe6;
+        border-radius: 4px;
+
+        .le-button-text {
+          color: #623ceb;
+          cursor: pointer;
+        }
+
+        .le-table-goods {
+          img {
+            width: 48px;
+            height: 48px;
+            display: block;
+            margin-right: 10px;
+          }
+        }
+
+        /deep/ .le-table-row {
+          height: 72px;
+          font-size: 14px;
+          font-family: Microsoft YaHei;
+          font-weight: 400;
+          color: #262626;
+        }
+      }
+
+      .goods-selet {
+        opacity: 0;
+        display: none;
+      }
+    }
+
+    .le-des-group {
+      padding-left: 20px;
+
+      .le-form-group {
+        width: 600px;
+        margin-top: 16px;
+
+        .le-group-item {
+          display: inline-block;
+          border: 1px solid #bebebe;
+          border-radius: 4px;
+          font-size: 12px;
+          font-family: Microsoft YaHei;
+          font-weight: 400;
+          color: #8c8c8c;
+          padding: 8px 32px 8px 12px;
+          line-height: 1;
+          margin-right: 8px;
+          margin-bottom: 8px;
+          cursor: pointer;
+          position: relative;
+
+          .le-group-item-delete {
+            position: absolute;
+            right: 12px;
+          }
+        }
+      }
+    }
+
+    .le-form-item-expire-remind {
+      font-size: 14px;
+      font-family: Microsoft YaHei;
+      font-weight: 400;
+      color: #262626;
+      margin-top: 10px;
+
+      > span {
+        font-size: 14px;
+        font-family: Microsoft YaHei;
+        font-weight: 400;
+        color: #623ceb;
+        margin-left: 8px;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.le-content {
+  margin-top: 25px;
+}
+
+.le-left {
+  width: 380px;
+  margin-right: 24px;
+
+  .le-left-top {
+    height: 680px;
+    width: 380px;
+    background-image: url('../image/goods-preview.png');
+    background-size: 100% 100%;
+    overflow: hidden;
+
+    .le-left-top_content {
+      width: 340px;
+      height: 524px;
+      background: #f5f5f5;
+      overflow: hidden;
+      margin: 118px auto 0 auto;
+
+      .le-coupon-detail {
+        width: 322px;
+        margin: 9px auto 0 auto;
+        background: #ffffff;
+        position: relative;
+        overflow: hidden;
+        border-radius: 8px;
+
+        .le-coupon-share {
+          width: 32px;
+          height: 32px;
+          position: absolute;
+          top: 18px;
+          right: 18px;
+          font-size: 10px;
+          font-family: PingFang SC;
+          font-weight: 500;
+          color: #999999;
+        }
+
+        .le-coupon-detail-top {
+          border: 1px solid #e60b30;
+          border-bottom: none;
+          height: 201px;
+          border-top-right-radius: 8px;
+          border-top-left-radius: 8px;
+
+          .le-coupon-doc {
+            top: 0;
+            left: 50%;
+            transform: translate(-50%, -50%);
+          }
+
+          .le-coupon-heade-body {
+            height: 193px;
+            padding: 28px 0 0 0;
+            position: relative;
+
+            .le-coupon-name {
+              font-size: 17px;
+              font-family: PingFang SC;
+              font-weight: bold;
+              color: #222222;
+              line-height: 22px;
+              margin-bottom: 12px;
+            }
+
+            .le-coupon-price {
+              font-size: 30px;
+              font-family: Microsoft YaHei;
+              font-weight: bold;
+              color: #e60b30;
+              height: 36px;
+              line-height: 36px;
+              margin-bottom: 10px;
+            }
+
+            .le-coupon-price::before {
+              content: '¥';
+              font-size: 12px;
+            }
+
+            .le-coupon-condition {
+              font-size: 12px;
+              font-family: PingFang SC;
+              font-weight: 500;
+              color: #999999;
+              line-height: 16px;
+              height: 16px;
+              margin-bottom: 16px;
+            }
+
+            .le-coupon-btn {
+              width: 127px;
+              height: 32px;
+              background: #e60b30;
+              border-radius: 16px;
+              font-size: 13px;
+              font-family: Microsoft YaHei;
+              font-weight: 400;
+              color: #ffffff;
+              outline: none;
+              border: none;
+            }
+          }
+        }
+
+        .le-coupon-detail-center {
+          height: 8px;
+          position: relative;
+
+          .le-coupon-doc {
+            top: 50%;
+          }
+
+          .le-coupon-doc:first-child {
+            left: 0;
+            transform: translate(-50%, -50%);
+          }
+
+          .le-coupon-doc:last-child {
+            right: 0;
+            transform: translate(50%, -50%);
+          }
+
+          .le-coupon-line {
+            width: 96%;
+            height: 0.5px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-position: center;
+            background-image: repeating-linear-gradient(90deg, red, red 16px, transparent 0, transparent 20px);
+          }
+        }
+
+        .le-coupon-detail-bottom {
+          border: 1px solid #e60b30;
+          border-top: none;
+          border-bottom-right-radius: 8px;
+          border-bottom-left-radius: 8px;
+
+          .le-coupon-doc {
+            bottom: 0;
+            left: 50%;
+            transform: translate(-50%, 50%);
+          }
+
+          .le-coupon-bottom-body {
+            padding: 12px 16px 35px 16px;
+
+            .le-coupon-title {
+              font-size: 11px;
+              font-family: PingFang SC;
+              font-weight: 500;
+              color: #222222;
+              line-height: 22px;
+            }
+
+            .le-coupon-text {
+              font-size: 11px;
+              font-family: PingFang SC;
+              font-weight: 500;
+              color: #999999;
+              line-height: 14px;
+              margin-bottom: 11px;
+              white-space: pre-wrap;
+            }
+          }
+        }
+
+        .le-coupon-doc-line {
+          width: 322px;
+          height: 8px;
+
+          .le-coupon-doc-item {
+            width: 18px;
+            height: 8px;
+            position: relative;
+          }
+        }
+
+        .le-coupon-doc {
+          width: 8px;
+          height: 8px;
+          position: absolute;
+          border: 1px solid #e60b30;
+          border-radius: 50%;
+          background: #f5f5f5;
+        }
+      }
+    }
+  }
+
+  .le-left-bottom {
+    text-align: center;
+    font-size: 14px;
+    font-family: Microsoft YaHei;
+    font-weight: 400;
+    color: #262626;
+    line-height: 32px;
+    margin-top: 10px;
+
+    .he-zhushi {
+      color: #bbbfc8;
+      font-size: 12px;
+      cursor: pointer;
+    }
+  }
+}

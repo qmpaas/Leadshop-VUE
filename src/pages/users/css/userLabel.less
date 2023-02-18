@@ -1,0 +1,149 @@
+.le-user-label {
+  height: 100%;
+  overflow: hidden;
+
+  .le-card {
+    padding: 24px;
+    border-radius: 16px;
+    background: #ffffff;
+  }
+
+  .le-head {
+    height: 96px;
+    margin-bottom: 24px;
+
+    .le-card {
+      cursor: pointer;
+      border-width: 1px;
+      border-style: solid;
+      border-color: transparent;
+      width: 306px;
+
+      .le-head-title {
+        font-size: 16px;
+        font-family: Microsoft YaHei;
+        font-weight: 400;
+        color: #262626;
+        line-height: 20px;
+      }
+
+      .le-head-desc {
+        font-size: 12px;
+        font-family: Microsoft YaHei;
+        font-weight: 400;
+        color: #bfbfbf;
+        line-height: 20px;
+      }
+    }
+
+    .le-card:first-child {
+      margin-right: 12px;
+    }
+
+    .le-card:last-child {
+      margin-left: 12px;
+    }
+
+    .le-card.active {
+      border-color: #623ceb;
+
+      .le-head-icon {
+        color: #623ceb;
+      }
+    }
+
+    .le-head-icon {
+      font-size: 48px;
+      margin-right: 20px;
+      color: #dcdfe6;
+    }
+  }
+
+  .le-body {
+    height: 800px;
+
+    .le-input-search /deep/ {
+      height: 32px;
+      width: 367px;
+
+      .el-input-group__append {
+        width: 46px;
+        padding: 0;
+
+        .el-button {
+          padding: 9px 16px;
+          margin: 0;
+        }
+      }
+    }
+
+    .le-add-button {
+      width: 104px;
+      height: 32px;
+      border-radius: 4px;
+      font-size: 14px;
+      font-family: Microsoft YaHei;
+      font-weight: 400;
+      color: #ffffff;
+      margin-left: 24px;
+      padding: 0;
+      border: none;
+    }
+
+    .le-table /deep/ {
+      margin-top: 16px;
+
+      .le-table-header-cell {
+        font-size: 14px;
+        font-family: Microsoft YaHei;
+        font-weight: 400;
+        color: #333333;
+      }
+
+      .le-table-row {
+        height: 61px;
+        font-size: 14px;
+        font-family: Microsoft YaHei;
+        font-weight: 400;
+        color: #333333;
+      }
+
+      .le-table-edit {
+        color: #623ceb;
+
+        .le-button-text {
+          cursor: pointer;
+          font-size: 14px;
+          font-family: Microsoft YaHei;
+          font-weight: 400;
+        }
+
+        .le-line-text {
+          height: 14px;
+          width: 1px;
+          background-color: #623ceb;
+          margin: 0 10px;
+        }
+      }
+
+      .le-table-row-type {
+        font-size: 14px;
+        font-family: Microsoft YaHei;
+        font-weight: 400;
+        color: #262626;
+      }
+
+      .le-table-row-conditions {
+        font-size: 12px;
+        font-family: Microsoft YaHei;
+        font-weight: 400;
+        color: #bfbfbf;
+        line-height: 16px;
+      }
+    }
+
+    .le-body-footer {
+      margin-top: 15px;
+    }
+  }
+}

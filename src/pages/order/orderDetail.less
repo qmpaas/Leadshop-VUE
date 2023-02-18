@@ -1,0 +1,73 @@
+.le-card {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 24px;
+}
+
+.he-step {
+  padding: 20px;
+}
+
+.he-logistics-details {
+  padding-left: 24px;
+
+  .he-info__content {
+    width: 100%;
+    height: 168px;
+
+    .le-time-line {
+      padding-left: 10px;
+      padding-top: 24px;
+
+      .le-time-item {
+        position: relative;
+        border-left: 1px solid #e5e5e5;
+        min-height: 50px;
+        padding-bottom: 23px;
+
+        .le-item-content {
+          margin-left: 20px;
+          position: absolute;
+          top: -3px;
+        }
+
+        .le-desc {
+          font-size: 12px;
+          font-family: Microsoft YaHei;
+          font-weight: 400;
+          color: #262626;
+          line-height: 18px;
+        }
+
+        .le-datetime {
+          font-size: 12px;
+          font-family: Microsoft YaHei;
+          font-weight: 400;
+          color: #8c8c8c;
+          line-height: 18px;
+          margin-top: 11px;
+        }
+      }
+
+      .le-time-item:last-child {
+        border-left: none;
+      }
+
+      .le-dot {
+        height: 8px;
+        width: 8px;
+        border-radius: 50%;
+        position: absolute;
+        left: -5px;
+      }
+
+      .le-dot--default {
+        background: #dcdfe6;
+      }
+
+      .le-dot--first {
+        background-color: #623ceb;
+      }
+    }
+  }
+}

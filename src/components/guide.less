@@ -1,0 +1,35 @@
+.guide {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 10086;
+
+  &-mask {
+    position: absolute;
+    top: 223px;
+    left: 205px;
+    width: 87px;
+    height: 92px;
+    border-radius: 8px;
+    box-shadow: 0 0 0 2000px rgba(0, 0, 0, 0.4);
+  }
+
+  &-animation {
+    position: absolute;
+    top: 223px;
+    left: 205px;
+    z-index: 10088;
+  }
+
+  &-step {
+    position: absolute;
+    left: 50%;
+    width: 120px;
+    margin-left: -60px;
+    bottom: 169px;
+    z-index: 10088;
+    text-align: center;
+    color: #ffffff;
+    cursor: pointer;
+  }
+}

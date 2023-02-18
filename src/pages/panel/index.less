@@ -1,0 +1,324 @@
+.le-panel {
+  height: 100%;
+  background: #f3f5f7;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -ms-user-select: none;
+}
+
+.le-index--content {
+  padding: 24px;
+  min-height: 100%;
+}
+
+.le-content__top {
+  height: 308px;
+}
+
+.le-panel__card {
+  background: #ffffff;
+  padding: 24px;
+  border-radius: 16px;
+}
+
+.le-number {
+  font-size: 24px;
+  font-family: DINPro;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.85);
+}
+
+.le-prompt {
+  font-size: 14px;
+  font-family: Microsoft YaHei;
+  font-weight: 400;
+  color: #cbced5;
+}
+
+.le-panel__card--header {
+  height: 16px;
+  position: relative;
+
+  .le-header__sign {
+    width: 4px;
+    height: 16px;
+    background: #623ceb;
+    margin-right: 12px;
+  }
+
+  .le-header__text {
+    font-size: 16px;
+    font-family: Microsoft YaHei;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.85);
+  }
+
+  .le-button {
+    position: absolute;
+    right: 0;
+    width: 56px;
+    height: 28px;
+    background: #623ceb;
+    border-radius: 4px;
+    font-size: 12px;
+    font-family: Microsoft YaHei;
+    font-weight: 400;
+    color: #ffffff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+  }
+}
+
+.le-top__store {
+  height: 308px;
+  min-width: 330px;
+  margin-right: 24px;
+
+  .le-store__sign {
+    position: relative;
+    height: 96px;
+    margin-top: 40px;
+
+    .le-store__status {
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 52px;
+      height: 24px;
+      line-height: 22px;
+      background: #ffffff;
+      border: 1px solid #623ceb;
+      border-radius: 12px;
+      font-size: 12px;
+      font-family: Microsoft YaHei;
+      font-weight: 400;
+      color: rgba(98, 60, 235, 0.85);
+      text-align: center;
+    }
+  }
+
+  .le-pivot {
+    width: 1px;
+    height: 13px;
+    background: #623ceb;
+    margin: 0 10px;
+  }
+
+  .le-router--text {
+    font-size: 14px;
+    line-height: 1;
+    font-family: Microsoft YaHei;
+    font-weight: 400;
+    color: #623ceb;
+    cursor: pointer;
+  }
+
+  .le-store__name {
+    font-size: 18px;
+    line-height: 30px;
+    font-family: Microsoft YaHei;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.85);
+    margin-top: 7px;
+    margin-bottom: 8px;
+  }
+}
+
+.le-router__top {
+  height: 140px;
+  margin-bottom: 24px;
+  width: 100%;
+
+  .le-router__top-left {
+    width: 60%;
+    margin-right: 12px;
+
+    .le-number {
+      cursor: pointer;
+    }
+
+    .le-number:hover {
+      color: #623ceb;
+    }
+  }
+
+  .le-router__top-right {
+    width: 40%;
+    margin-left: 12px;
+
+    .flex-sub:first-child {
+      .le-number {
+        cursor: pointer;
+      }
+
+      .le-number:hover {
+        color: #623ceb;
+      }
+    }
+
+    .he-annotation {
+      font-size: 12px !important;
+      color: #bbbfc8;
+      cursor: pointer;
+    }
+  }
+}
+
+.le-router__bottom {
+  height: 144px;
+
+  .le-router__bottom--body {
+    padding: 32px 0 8px 0;
+
+    .le-entrance {
+      height: 40px;
+      width: 104px;
+
+      .le-entrance__router {
+        cursor: pointer;
+      }
+
+      .le-entrance__img {
+        height: 40px;
+        width: 40px;
+      }
+
+      .le-entrance__text {
+        margin-left: 8px;
+      }
+    }
+  }
+}
+
+.le-content__body {
+  //min-width: 1393px;
+  margin-top: 24px;
+
+  .le-echarts {
+    height: 237px;
+    margin: 30px 0 8px 0;
+
+    .le-number {
+      line-height: 32px;
+    }
+
+    .le-prompt {
+      line-height: 22px;
+    }
+
+    .le-echarts__canvas {
+      height: 180px;
+      width: 70%;
+      margin: 0 auto;
+    }
+  }
+
+  .le-echarts:not(:last-child) {
+    border-right: 1px solid #dcdfe6;
+  }
+}
+
+.le-content__footer {
+  margin-top: 24px;
+
+  .le-table__content {
+    //min-width: 684px;
+  }
+
+  .le-table__content:first-child {
+    margin-right: 12px;
+  }
+
+  .le-table__content:last-child {
+    margin-left: 12px;
+  }
+
+  .le-table {
+    margin-top: 32px;
+
+    /deep/ .le-table__header {
+      height: 40px;
+    }
+
+    /deep/ .le-table__header .gutter {
+      height: 40px;
+    }
+
+    /deep/ .le-table__header .is-sortable {
+      padding: 0;
+    }
+
+    /deep/ .le-table__header th.is-leaf {
+      height: 40px;
+    }
+
+    /deep/ .le-table__row {
+      height: 55.5px;
+    }
+
+    /deep/ .le-table__cell {
+      font-size: 14px;
+      font-family: Microsoft YaHei;
+      font-weight: 400;
+      color: rgba(0, 0, 0, 0.85);
+    }
+
+    /deep/ .le-line-name .cell {
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+
+    .le-avatar {
+      width: 28px;
+      height: 28px;
+    }
+
+    .le-icon {
+      margin-left: 16px;
+      margin-right: 4px;
+    }
+  }
+
+  .le-table__page {
+    margin-top: 16px;
+  }
+}
+
+.le-panel__footer {
+  height: 70px;
+  width: 100%;
+  text-align: center;
+  font-size: 14px;
+  font-family: PingFang SC;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.45);
+  line-height: 22px;
+  opacity: 0.45;
+  padding-top: 10px;
+  margin-top: 50px;
+
+  .le-link span {
+    cursor: pointer;
+    display: inline-block;
+    margin: 0 10px;
+
+    a {
+      color: rgba(0, 0, 0, 0.45);
+    }
+  }
+  .le-copy {
+    color: rgba(0, 0, 0, 0.45);
+    font-size: 14px;
+    font-family: PingFang SC;
+    font-weight: 500;
+    line-height: 48px;
+  }
+}
+
+.le-icon-zhushi {
+  cursor: pointer;
+}

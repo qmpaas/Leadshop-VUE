@@ -1,0 +1,416 @@
+/*
+* @Author: qinuoyun
+* @Date:   2021-05-12 10:57:53
+* @Last Modified by:   qinuoyun
+* @Last Modified time: 2021-05-19 13:59:49
+*/
+
+.task-background {
+  width: 100%;
+  height: 360px;
+  position: relative;
+  // overflow: hidden;
+}
+
+.task-background1 {
+  width: 1500px;
+  height: 1500px;
+  background: linear-gradient(-55deg, #e60b30 0%, rgba(230, 11, 48, 0.75) 100%);
+  border-radius: 0 1500px;
+  transform: rotate(-45deg);
+  position: absolute;
+  left: 50%;
+  margin-left: -750px;
+  top: -800px;
+}
+
+.task-background2 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 220px;
+  background: linear-gradient(-55deg, #e60b30 0%, rgba(230, 11, 48, 0.75) 100%);
+}
+
+.task-background3 {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 750px;
+  height: 360px;
+}
+
+.he-products-featured {
+  width: 750px;
+  overflow: hidden;
+  text-align: center;
+}
+
+.task-background__span {
+  position: absolute;
+  right: 20px;
+  top: 32px;
+  font-size: 24px;
+  color: #ffffff;
+}
+
+.he-top {
+  margin-top: 43px;
+  border-radius: 16px 16px 0 0;
+}
+
+.iconproductrecommendation_line {
+  font-size: 68px;
+  color: #a2a2a2;
+}
+
+.he-icon-right {
+  transform: rotate(180deg);
+  transform-origin: 50% 50%;
+}
+
+.he-text {
+  font-size: 28px;
+  font-family: PingFang SC;
+  font-weight: 500;
+  color: #222222;
+  margin: 0 21px;
+}
+
+.task-uni {
+  width: 750px;
+  overflow: hidden;
+  background: #f5f5f5;
+  position: relative;
+  font-family: PingFang SC;
+  // transform: scale(0.453);
+  // transform-origin: 0 0;
+  //zoom: .453;
+
+  .task-viewmore {
+    width: 299px;
+    height: 72px;
+    line-height: 72px;
+    border: 1px solid #e60b30;
+    border-radius: 36px;
+    font-size: 24px;
+    font-weight: 400;
+    color: #e60b30;
+    text-align: center;
+    margin-bottom: 79px;
+  }
+
+  .task-body {
+    background: #f5f5f5;
+  }
+
+  .task-main {
+    margin-top: -96px;
+  }
+
+  .task-card {
+    width: 710px;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 16px;
+    margin: 16px auto;
+    position: relative;
+    z-index: 100;
+
+    .task-card__header {
+      width: 100%;
+      height: 48px;
+      line-height: 48px;
+      font-size: 32px;
+      font-weight: 400;
+      color: #222222;
+      margin-bottom: 8px;
+    }
+
+    .task-card__lists {
+      .__item {
+        width: 100%;
+        padding: 36px 24px 0 24px;
+        box-sizing: border-box;
+        display: flex;
+        flex-flow: row;
+        align-items: flex-start;
+
+        .__icon {
+          width: 88px;
+          height: 88px;
+        }
+
+        .__info {
+          flex: 1;
+          padding-left: 17px;
+          position: relative;
+          border-bottom: 1px solid #e5e5e5;
+          padding-bottom: 36px;
+
+          .__title {
+            width: 420px;
+            height: 44px;
+            line-height: 44px;
+            font-size: 30px;
+            font-weight: 400;
+            color: #222222;
+          }
+
+          .__tips {
+            width: 420px;
+            height: 44px;
+            line-height: 44px;
+            font-size: 24px;
+            font-weight: 400;
+            color: #666666;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+          }
+
+          .__notice {
+            width: 420px;
+            height: 32px;
+            line-height: 32px;
+            font-size: 24px;
+            font-weight: 400;
+            color: #e60b30;
+          }
+
+          .__btn {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 120px;
+            height: 52px;
+            background: #ffffff;
+            border: 1px solid #e60b30;
+            border-radius: 26px;
+            text-align: center;
+            line-height: 52px;
+            font-weight: 400;
+            color: #e60b30;
+            font-size: 24px;
+          }
+        }
+      }
+
+      .__item:last-child .__info {
+        border-bottom: 0 solid #e5e5e5;
+      }
+    }
+  }
+
+  .task-panel {
+    position: relative;
+    margin: 0 auto;
+    width: 710px;
+    min-height: 420px;
+    background: #ffffff;
+    border-radius: 16px;
+    padding-bottom: 48px;
+    padding-top: 36px;
+  }
+
+  .task-panel * {
+    margin: 0;
+    padding: 0;
+  }
+
+  .task-background__icon {
+    position: absolute;
+    left: 20px;
+    top: 144px;
+    width: 52px;
+    height: 52px;
+  }
+
+  .task-background__info {
+    position: absolute;
+    left: 92px;
+    top: 144px;
+    height: 52px;
+
+    ._number {
+      font-size: 60px;
+      line-height: 52px;
+      font-family: DIN;
+      font-weight: 500;
+      color: #ffffff;
+    }
+
+    ._detail {
+      padding-left: 24px;
+      font-size: 24px;
+      font-weight: 400;
+      color: #ffffff;
+    }
+
+    .iconfont {
+      padding-left: 8px;
+      color: #ffffff;
+      font-size: 22px;
+    }
+  }
+
+  .task-background__text {
+    position: absolute;
+    right: 22px;
+    top: 35px;
+    width: 200px;
+    text-align: right;
+    height: 22px;
+    font-size: 22px;
+    font-weight: 400;
+    color: #ffffff;
+  }
+
+  .task-background__current {
+    width: 120px;
+    font-size: 26px;
+    font-weight: 400;
+    color: #ffffff;
+    top: 87px;
+    left: 22px;
+    position: absolute;
+  }
+
+  .task-background__btn {
+    width: 142px;
+    height: 60px;
+    line-height: 60px;
+    border: 1px solid #ffffff;
+    border-radius: 30px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 400;
+    color: #ffffff;
+    position: absolute;
+    top: 140px;
+    right: 20px;
+  }
+
+  .task-panel__title {
+    width: 100%;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 400;
+    color: #999999;
+  }
+
+  .task-panel__title2 {
+    width: 100%;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 400;
+    color: #999999;
+  }
+
+  .task-panel__button {
+    bottom: 48px;
+    width: 380px;
+    height: 80px;
+    margin: 0 auto;
+    line-height: 80px;
+    background: #e60b30;
+    border-radius: 40px;
+    font-size: 30px;
+    font-weight: 400;
+    color: #ffffff;
+    text-align: center;
+    margin-top: 42px;
+  }
+
+  .task-panel__button_w {
+    bottom: 48px;
+    width: 380px;
+    height: 80px;
+    margin: 0 auto;
+    margin-top: 42px;
+    line-height: 80px;
+    background: #cccccc;
+    border-radius: 40px;
+    font-size: 30px;
+    font-weight: 400;
+    color: #ffffff;
+    text-align: center;
+  }
+
+  .task-panel__button_b {
+    bottom: 48px;
+    width: 380px;
+    height: 80px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .task-panel__button_h5 {
+    width: 380px;
+    height: 80px;
+    line-height: 80px;
+    background: #e60b30;
+    border-radius: 40px;
+    font-size: 30px;
+    font-weight: 400;
+    color: #ffffff;
+    text-align: center;
+  }
+
+  .task-panel__lists {
+    text-align: center;
+    padding: 0 24px;
+    margin-left: -6px;
+    display: flex;
+    margin-top: 35px;
+  }
+
+  .task-panel__item {
+    position: relative;
+    flex: 1;
+    width: 84px;
+    margin: 0 6px;
+
+    .__bg {
+      width: 84px;
+      height: 116px;
+      background: #f5f6fa;
+      border-radius: 16px;
+      position: relative;
+
+      img {
+        position: absolute;
+        left: 16px;
+        top: 16px;
+        width: 52px;
+        height: 52px;
+      }
+    }
+
+    .__bg.active {
+      background: #fff3cf;
+    }
+
+    .__date {
+      margin-top: 12px;
+      width: 100%;
+      text-align: center;
+      font-size: 24px;
+      font-weight: 400;
+      color: #999999;
+    }
+
+    .__tips {
+      position: absolute;
+      left: 0;
+      bottom: 20px;
+      width: 100%;
+      text-align: center;
+      height: 22px;
+      font-size: 24px;
+      font-weight: 400;
+      color: #666666;
+    }
+  }
+}

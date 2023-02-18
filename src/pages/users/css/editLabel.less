@@ -1,0 +1,152 @@
+.le-matter {
+  height: 100%;
+}
+
+.le-card {
+  min-height: 70vh;
+  background: #ffffff;
+  border-radius: 16px;
+  margin-top: 25px;
+  padding: 40px 0;
+
+  .le-form-item__label {
+    font-size: 14px;
+    font-family: Microsoft YaHei;
+    font-weight: 400;
+    color: #262626;
+  }
+
+  .el-form-item:last-child {
+    margin-bottom: 0;
+  }
+
+  .le-form-button {
+    background: #ffffff;
+    border: 1px solid #623ceb;
+    border-radius: 4px;
+    font-size: 14px;
+    font-family: Microsoft YaHei;
+    font-weight: 400;
+    color: #623ceb;
+    padding: 9px 24px;
+    line-height: 1;
+    outline: none;
+    cursor: pointer;
+    box-sizing: border-box;
+  }
+
+  .le-form-button[disabled] {
+    background: #f3f5f7;
+    color: #8c8c8c;
+    border-color: #f3f5f7;
+  }
+
+  .le-form-item-type {
+    .le-form-item__line {
+      margin-bottom: 20px;
+
+      .le-goods-table {
+        width: 900px;
+        margin-top: 20px;
+        border: 1px solid #dcdfe6;
+        border-radius: 4px;
+        .le-button-text {
+          color: #623ceb;
+          cursor: pointer;
+        }
+
+        .le-table-goods {
+          img {
+            width: 48px;
+            height: 48px;
+            display: block;
+            margin-right: 10px;
+          }
+        }
+
+        /deep/ .le-table-row {
+          height: 72px;
+          font-size: 14px;
+          font-family: Microsoft YaHei;
+          font-weight: 400;
+          color: #262626;
+        }
+      }
+
+      .goods-selet {
+        opacity: 0;
+        display: none;
+      }
+
+      .el-input {
+        width: 200px;
+      }
+
+      /deep/ .el-date-editor .el-input__inner {
+        padding-left: 41px;
+      }
+
+      .le-form-date-go {
+        font-size: 14px;
+        font-family: Microsoft YaHei;
+        font-weight: 400;
+        color: #262626;
+        margin: 0 16px;
+      }
+
+      .le-form-group {
+        width: 900px;
+        margin-top: 20px;
+        .le-group-item {
+          display: inline-block;
+          border: 1px solid #bebebe;
+          border-radius: 4px;
+          font-size: 12px;
+          font-family: Microsoft YaHei;
+          font-weight: 400;
+          color: #8c8c8c;
+          padding: 8px 32px 8px 12px;
+          line-height: 1;
+          margin-right: 8px;
+          margin-bottom: 8px;
+          cursor: pointer;
+          position: relative;
+          .le-group-item-delete {
+            position: absolute;
+            right: 12px;
+          }
+        }
+      }
+    }
+
+    .le-form-checkbox .el-checkbox {
+      margin-right: 16px;
+    }
+  }
+
+  .le-form-item-tip {
+    font-size: 12px;
+    font-family: Microsoft YaHei;
+    font-weight: 400;
+    color: #bfbfbf;
+    line-height: 16px;
+    margin-top: 10px;
+  }
+  .le-users-table /deep/ {
+    width: 900px;
+    margin-top: 20px;
+    border: 1px solid #dcdfe6;
+    border-radius: 4px;
+    .le-table-row {
+      height: 56px;
+      font-size: 14px;
+      font-family: Microsoft YaHei;
+      font-weight: 400;
+      color: #262626;
+    }
+    .le-button-text {
+      color: #623ceb;
+      cursor: pointer;
+    }
+  }
+}

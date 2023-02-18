@@ -1,0 +1,112 @@
+.le-login {
+  position: relative;
+  min-height: 100vh;
+  background-color: #f9fafb;
+  overflow: hidden;
+
+  .le-content__body {
+    width: 420px;
+    height: 520px;
+    background: #ffffff;
+    box-shadow: 0 0 16px 0 rgba(33, 34, 36, 0.06);
+    border-radius: 16px;
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+
+    .le-body__icon {
+      width: 260px;
+      height: 64px;
+      margin: 72px auto 40px auto;
+      background-size: 100%;
+      background-repeat: no-repeat;
+    }
+  }
+
+  .le-body__form {
+    padding: 0 56px;
+
+    .le-form__item {
+      border-bottom: 1px solid #dcdfe6;
+      margin-bottom: 32px;
+    }
+
+    .le-label {
+      height: 28px;
+      line-height: 28px;
+      background: #ffffff;
+      font-size: 14px;
+      font-family: Microsoft YaHei;
+      font-weight: 400;
+      color: #8c8c8c;
+    }
+
+    .le-value {
+      height: 32px;
+      background: #ffffff;
+
+      /deep/ input {
+        border: none;
+        padding: 5px;
+      }
+    }
+
+    .le-login-submit,
+    .le-login-submit:hover,
+    .le-login-submit:active,
+    .le-login-submit:focus {
+      width: 308px;
+      height: 40px;
+      background: #623ceb;
+      border-radius: 4px;
+      font-size: 16px;
+      font-family: Microsoft YaHei;
+      font-weight: 400;
+      color: #ffffff;
+    }
+
+    .le-login-submit[disabled],
+    .le-login-submit[disabled]:hover {
+      background: #f3f5f7;
+      color: #bfbfbf;
+    }
+  }
+
+  .le-login__content {
+    width: 952px;
+    height: 480px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+
+  .le-record {
+    position: absolute;
+    bottom: 24px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 14px;
+    font-family: PingFang SC;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.45);
+    line-height: 44px;
+  }
+
+  .le-publick-security {
+    margin-right: 7px;
+  }
+
+  .le-a {
+    color: rgba(0, 0, 0, 0.45);
+    margin-right: 5px;
+    cursor: pointer;
+  }
+
+  .le-a:hover {
+    color: #623ceb;
+  }
+}

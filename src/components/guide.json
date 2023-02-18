@@ -1,0 +1,162 @@
+[
+  {
+    "name": "search",
+    "icon": "http://qmxq.oss-cn-hangzhou.aliyuncs.com/pageicon/search-icon.png",
+    "title": "搜索框",
+    "content": {
+      "style": 1,
+      "text": ""
+    },
+    "facade": {
+      "border_style": 1,
+      "text_align": "left",
+      "background_color": "#f7f7f7",
+      "border_color": "#FFFFFF",
+      "icon_color": "#999999",
+      "text_color": "#999999",
+      "high_style": 20
+    }
+  },
+  {
+    "name": "tabs",
+    "icon": "http://qmxq.oss-cn-hangzhou.aliyuncs.com/pageicon/tabs-icon.png",
+    "title": "选项卡",
+    "content": {
+      "data": [
+        {
+          "title": "新品推荐",
+          "type": 1,
+          "goods": [
+            {
+              "id": 171,
+              "name": "碎花裙裙碎花裙裙碎花裙裙碎花裙裙碎花裙裙碎花裙裙碎花裙裙碎花裙裙碎花裙裙碎花裙裙",
+              "price": "55.00",
+              "line_price": "888.00",
+              "group": "-50-76-87-80-81-83-80-81-82-88-89-77-79-77-78-",
+              "status": 0,
+              "param_type": 2,
+              "unit": "双",
+              "slideshow": ["https://open.heshop.vip/upload/image/2021/02/24/36612083e5d48ab30fd16408ac179b6d.png"],
+              "is_video": 0,
+              "video": "[]",
+              "video_cover": "",
+              "is_real": 1,
+              "is_sale": 1,
+              "tags": "",
+              "stocks": 800005,
+              "reduce_stocks": 2,
+              "ft_type": 1,
+              "ft_price": "5.00",
+              "ft_id": null,
+              "pfr_id": null,
+              "limit_buy_status": 0,
+              "limit_buy_type": null,
+              "limit_buy_value": null,
+              "min_number": 1,
+              "sort": 1,
+              "services": "[]",
+              "visits": 96,
+              "virtual_sales": 1221,
+              "sales": 0,
+              "merchant_id": 1,
+              "AppID": "98c08c25f8136d590c",
+              "created_time": 1614149230,
+              "updated_time": 1617003956,
+              "deleted_time": null,
+              "is_deleted": 0,
+              "sales_amount": "0.00",
+              "is_recycle": 0,
+              "goods_sn": "",
+              "visitors": 14
+            },
+            {
+              "id": 170,
+              "name": "保暖短靴雪地靴保暖短靴雪地靴保暖短靴雪地靴保暖短靴雪地靴保暖短靴雪地靴保暖短靴雪",
+              "price": "329.00",
+              "line_price": "0.00",
+              "group": "-50-76-87-80-81-83-80-81-82-88-89-77-79-77-78-",
+              "status": 0,
+              "param_type": 2,
+              "unit": "双",
+              "slideshow": [
+                "https://open.heshop.vip/upload/image/2021/02/24/aad96d658cb5a9992190ef4bcf7e9cf6.png",
+                "https://open.heshop.vip/upload/image/2021/02/24/71aa8d4a321c1aed26ce6f5109076a08.png"
+              ],
+              "is_video": 0,
+              "video": "[]",
+              "video_cover": "",
+              "is_real": 1,
+              "is_sale": 1,
+              "tags": "",
+              "stocks": 1979,
+              "reduce_stocks": 2,
+              "ft_type": 1,
+              "ft_price": "8.00",
+              "ft_id": null,
+              "pfr_id": null,
+              "limit_buy_status": 0,
+              "limit_buy_type": null,
+              "limit_buy_value": null,
+              "min_number": 1,
+              "sort": 1,
+              "services": "[]",
+              "visits": 62,
+              "virtual_sales": 2021,
+              "sales": 4,
+              "merchant_id": 1,
+              "AppID": "98c08c25f8136d590c",
+              "created_time": 1614148559,
+              "updated_time": 1614910281,
+              "deleted_time": null,
+              "is_deleted": 0,
+              "sales_amount": "1316.00",
+              "is_recycle": 0,
+              "goods_sn": "",
+              "visitors": 14
+            }
+          ],
+          "group": {}
+        },
+        {
+          "title": "热销爆款",
+          "type": 1,
+          "goods": [],
+          "group": {}
+        },
+        {
+          "title": "人气女装",
+          "type": 1,
+          "goods": [],
+          "group": {}
+        },
+        {
+          "title": "直播款",
+          "type": 1,
+          "goods": [],
+          "group": {}
+        }
+      ],
+      "is_title": true,
+      "is_price": true,
+      "is_button": true
+    },
+    "facade": {
+      "list_style": 2,
+      "card_style": 1,
+      "chamfer_style": 0,
+      "margin": 10,
+      "padding": 10
+    }
+  },
+  {
+    "name": "wechat",
+    "icon": "http://qmxq.oss-cn-hangzhou.aliyuncs.com/pageicon/wechat-icon.png",
+    "title": "微信公众号",
+    "content": {},
+    "facade": {
+      "line_style": "",
+      "line_color": "",
+      "high_style": 20
+    }
+  }
+]
